@@ -57,7 +57,8 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
-			// expect(*the menu to be hidden by default*).toBe(true);
+			// expect(*the menu element*).toHaveClass('menu-hidden');
+			// expect($( body )).toHaveClass('menu-hidden');
 		});
 		/** TODO: Write a test that ensures the menu changes
       * visibility when the menu icon is clicked. This test
