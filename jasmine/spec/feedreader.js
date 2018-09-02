@@ -28,8 +28,8 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
-			//expect(eachFeed).toBeDefined(); // TODO which matcher?
-			//expect(eachFeed).not.toBe(null); // TODO which matcher?
+			// expect(*the resulting URL of eachFeed*).toBeDefined();
+			// expect(*the resulting URL of eachFeed*).not.toBeNull();
 		});
 
 
@@ -41,6 +41,8 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
+			// expect(eachFeed).*to have a name defined*;
+			// expect(eachFeed).*the name is not empty*;
 		});
 	});
 
@@ -55,7 +57,7 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
-			//expect(this).toBe(hidden by default);
+			// expect(*the menu to be hidden by default*).toBe(true);
 		});
 		/** TODO: Write a test that ensures the menu changes
       * visibility when the menu icon is clicked. This test
@@ -66,8 +68,8 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
-			// expect(this).toBe(Displayed.onClick);
-			// expect(this).toBe(Hidden.onClick);
+			// expect(*the menu to display onClick*).toBe(true);
+			// expect(*the menu to hide onClick*).toBe(true);
 		});
 	});
 
