@@ -41,8 +41,8 @@ $(function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
-			// expect(eachFeed).*to have a name defined*;
-			// expect(eachFeed).*the name is not empty*;
+			// expect(*eachFeed.name*).toBeDefined();
+			// expect(*eachFeed.name*).not.toBeNull();
 		});
 	});
 
