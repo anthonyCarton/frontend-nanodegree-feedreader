@@ -27,8 +27,9 @@ $(function() {
 		it('have objects with URLs that are defined and not empty', function() {
 			// placeholder
 			expect(true).toBe(true);
-			//expect(eachFeed).toBeDefined();
-			//expect(eachFeed).not.toBe(null);
+			// expect(actual).matcher(expectedValue);
+			//expect(eachFeed).toBeDefined(); // TODO which matcher?
+			//expect(eachFeed).not.toBe(null); // TODO which matcher?
 		});
 
 
@@ -39,6 +40,7 @@ $(function() {
 		it('have individual feed objects have name defined for each', function() {
 			// placeholder
 			expect(true).toBe(true);
+			// expect(actual).matcher(expectedValue);
 		});
 	});
 
@@ -52,6 +54,7 @@ $(function() {
 		it('is hidden by default', function() {
 			// placeholder
 			expect(true).toBe(true);
+			// expect(actual).matcher(expectedValue);
 			//expect(this).toBe(hidden by default);
 		});
 		/** TODO: Write a test that ensures the menu changes
@@ -62,6 +65,7 @@ $(function() {
 		it('changes visibility when the menu icon is clicked', function() {
 			// placeholder
 			expect(true).toBe(true);
+			// expect(actual).matcher(expectedValue);
 			// expect(this).toBe(Displayed.onClick);
 			// expect(this).toBe(Hidden.onClick);
 		});
@@ -77,6 +81,7 @@ $(function() {
 		it('', function() {
 			// placeholder
 			expect(true).toBe(true);
+			// expect(actual).matcher(expectedValue);
 		});
 });
 
@@ -88,6 +93,7 @@ $(function() {
 		it('content changes when loadFeed() is called', function() {
 			// placeholder
 			expect(true).toBe(true);
+			// expect(actual).matcher(expectedValue);
 		});
 	});
 }());
