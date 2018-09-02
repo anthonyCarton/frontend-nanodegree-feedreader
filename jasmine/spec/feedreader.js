@@ -19,17 +19,15 @@ $(function() {
 			expect(allFeeds.length).not.toBe(0);
 		});
 
-
-		/** TODO: Write a test that loops through each feed
-    	* in the allFeeds object and ensures it has a URL defined
+		/** Test loops through each feed in the allFeeds object 
+			* and ensures it has a URL defined
     	* and that the URL is not empty.
     	*/
 		it('have objects with URLs that are defined and not empty', function() {
-			// placeholder
-			expect(true).toBe(true);
-			// expect(actual).matcher(expectedValue);
-			// expect(*the resulting URL of eachFeed*).toBeDefined();
-			// expect(*the resulting URL of eachFeed*).not.toBeNull();
+			for (let eachObject of allFeeds) {
+				expect(eachObject.url).toBeDefined();
+				expect(eachObject.url).toContain('http');
+			}
 		});
 
 
