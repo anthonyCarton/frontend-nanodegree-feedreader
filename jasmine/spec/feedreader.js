@@ -25,6 +25,8 @@ $(function() {
     	* and that the URL is not empty.
     	*/
 		it('have objects with URLs that are defined and not empty', function() {
+			// placeholder
+			expect(true).toBe(true);
 			//expect(eachFeed).toBeDefined();
 			//expect(eachFeed).not.toBe(null);
 		});
@@ -35,6 +37,7 @@ $(function() {
     	* and that the name is not empty.
     	*/
 		it('have individual feed objects have name defined for each', function() {
+			// placeholder
 			expect(true).toBe(true);
 		});
 	});
@@ -47,6 +50,8 @@ $(function() {
 			* hiding/showing of the menu element.
 			*/
 		it('is hidden by default', function() {
+			// placeholder
+			expect(true).toBe(true);
 			//expect(this).toBe(hidden by default);
 		});
 		/** TODO: Write a test that ensures the menu changes
@@ -55,6 +60,8 @@ $(function() {
       * clicked and does it hide when clicked again.
       */
 		it('changes visibility when the menu icon is clicked', function() {
+			// placeholder
+			expect(true).toBe(true);
 			// expect(this).toBe(Displayed.onClick);
 			// expect(this).toBe(Hidden.onClick);
 		});
@@ -68,7 +75,8 @@ $(function() {
   	* the use of Jasmine's beforeEach and asynchronous done() function.
   	*/
 		it('', function() {
-
+			// placeholder
+			expect(true).toBe(true);
 		});
 });
 
@@ -78,7 +86,8 @@ $(function() {
   	* Remember, loadFeed() is asynchronous.
   	*/
 		it('content changes when loadFeed() is called', function() {
-
+			// placeholder
+			expect(true).toBe(true);
 		});
 	});
 }());
