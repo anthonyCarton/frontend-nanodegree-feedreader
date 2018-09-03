@@ -37,11 +37,8 @@ $(function() {
     	*/
 		it('have individual feed objects have name defined for each', function() {
 			for (let eachObject of allFeeds) {
-			// expect(actual).matcher(expectedValue);
-			console.log(eachObject);
-			console.log(eachObject.name);
-			expect(eachObject.name).toBeDefined();
-			expect(eachObject.name).toMatch('\.');
+				expect(eachObject.name).toBeDefined();
+				expect(eachObject.name).toMatch('.');
 			}
 		});
 	});
