@@ -45,23 +45,20 @@ $(function() {
 
 
 	describe('The menu', function() {
+		let menuClass = document.querySelector('body').className;
+		let menuIcon = $('.menu-icon-link');
 		/** Test ensures menu is hidden by default.
 			*/
 		it('is hidden by default', function() {
-			let menuClass = document.querySelector('body').className;
 			expect(menuClass).toBe('menu-hidden');
 		});
-		/** TODO: Write a test that ensures the menu changes
-      * visibility when the menu icon is clicked. This test
+		/** TODO: Write test that ensures menu changes
+      * visibility when menu icon is clicked. This test
       * should have two expectations: does the menu display when
       * clicked and does it hide when clicked again.
       */
 		it('changes visibility when the menu icon is clicked', function() {
-			// placeholder
 			expect(true).toBe(true);
-			// expect(actual).matcher(expectedValue);
-			// expect(*the menu to display onClick*).toBe(true);
-			// expect(*the menu to hide onClick*).toBe(true);
 		});
 	});
 
