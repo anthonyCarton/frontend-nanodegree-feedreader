@@ -49,9 +49,6 @@ $(function() {
 			*/
 		it('is hidden by default', function() {
 			let menuClass = document.querySelector('body').className;
-			// This should work, but isn't
-			// https://github.com/jasmine/jasmine/issues/1503
-			// expect(menu).toHaveClass('menu-hidden');
 			expect(menuClass).toBe('menu-hidden');
 		});
 		/** TODO: Write a test that ensures the menu changes
