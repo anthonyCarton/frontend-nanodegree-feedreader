@@ -19,9 +19,9 @@ $(function() {
 			expect(allFeeds.length).not.toBe(0);
 		});
 
-		/** Test loops through each feed in the allFeeds object
-			* and ensures it has a URL defined
-    	* and that the URL is not empty.
+		/** Test loops through each of allFeeds
+			* ensures it has a URL defined
+    	* and URL is not empty.
     	*/
 		it('have objects with URLs that are defined and not empty', function() {
 			for (let eachObject of allFeeds) {
@@ -31,9 +31,9 @@ $(function() {
 		});
 
 
-		/** Test loops through each in allFeeds
-		 	* and ensures it has a name defined
-    	* and that the name is not empty.
+		/** Test loops through each of allFeeds
+		 	* ensures a name defined
+    	* and name is not empty.
     	*/
 		it('have individual feed objects have name defined for each', function() {
 			for (let eachObject of allFeeds) {
