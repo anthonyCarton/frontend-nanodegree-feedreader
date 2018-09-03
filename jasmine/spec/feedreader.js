@@ -77,7 +77,7 @@ $(function() {
   	* Remember, loadFeed() is asynchronous so this test will require
   	* the use of Jasmine's beforeEach and asynchronous done() function.
   	*/
-		it('', function() {
+		it('have at least one entry in feed container', function() {
 			// placeholder
 			expect(true).toBe(true);
 			// expect(actual).matcher(expectedValue);
