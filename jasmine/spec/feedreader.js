@@ -45,17 +45,14 @@ $(function() {
 
 
 	describe('The menu', function() {
-		/** TODO: Write a test that ensures the menu element is
-			* hidden by default. You'll have to analyze the HTML and
-			* the CSS to determine how we're performing the
-			* hiding/showing of the menu element.
+		/** Test ensures menu is hidden by default.
 			*/
 		it('is hidden by default', function() {
-			// placeholder
-			expect(true).toBe(true);
-			// expect(actual).matcher(expectedValue);
-			// expect(*the menu element*).toHaveClass('menu-hidden');
-			// expect($( body )).toHaveClass('menu-hidden');
+			let menuClass = document.querySelector('body').className;
+			// This should work, but isn't
+			// https://github.com/jasmine/jasmine/issues/1503
+			// expect(menu).toHaveClass('menu-hidden');
+			expect(menuClass).toBe('menu-hidden');
 		});
 		/** TODO: Write a test that ensures the menu changes
       * visibility when the menu icon is clicked. This test
