@@ -78,7 +78,6 @@ $(function() {
   	* the use of Jasmine's beforeEach and asynchronous done() function.
   	*/
 		beforeEach(function(done) {
-			console.log('load feed 2');
 			loadFeed(0, function(){
 				done();
 			});
@@ -95,21 +94,17 @@ $(function() {
 
 
 	describe('New Feed Selection', function() {
-	/** TODO: Write a test that ensures when a new feed is loaded
-  	* by the loadFeed function that the content actually changes.
-  	* Remember, loadFeed() is asynchronous.
+	/** Test ensures content actually changes when
+		* new feed is loaded by the loadFeed()
   	*/
 		let itemCompare = [];
-		let first, second;
 
 		// Note to Self: Remember to pass done and call done() or it won't work
 		beforeEach(function(done) {
 			// load the 2nd feed initially
 			loadFeed(1, function() {
 				// first item to itemCompare[0]
-				// itemCompare[0] = $( '.feed' ).find('h1').html();
-				first = $('.feed').find('h2').html();
-				console.log(first);
+				itemCompare[0] = $('.feed').find('h2').html();
 				done();
 			});
 		});
@@ -119,16 +114,12 @@ $(function() {
 			// load the 1st feed again
 			loadFeed(0, function() {
 				// push first item to itemCompare[1]
-				// itemCompare[1] = $( '.feed' ).find('h1').html();
-				second = $('.feed').find('h2').html();
-				console.log(second);
-				expect(first).not.toMatch(second);
+				itemCompare[1] = $('.feed').find('h2').html();
 				done();
 			});
 
 			// itemCompare[0] should not match itemCompare[1]
-			// expect(itemCompare[0]).not.toMatch(itemCompare[1]);
-			expect(first).not.toBe(second);
+			expect(itemCompare[0]).not.toBe(itemCompare[1]);
 		});
 	});
 }());
