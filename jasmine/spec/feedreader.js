@@ -61,7 +61,7 @@ $(function() {
 			menuIcon.trigger( testClick );
 			// update menuClass
 			menuClass = $('body').hasClass('menu-hidden');
-			expect(menuClass).not.toBe(true);
+			expect(menuClass).toBe(false);
 			// simulate a click again
 			menuIcon.trigger( testClick );
 			// update menuClass
