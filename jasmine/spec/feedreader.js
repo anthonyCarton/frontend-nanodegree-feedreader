@@ -20,8 +20,7 @@ $(function() {
 		});
 
 		/** Test loops through each of allFeeds
-			* ensures it has a URL defined
-    	* and URL is not empty.
+			* ensures it has a URL defined and not empty
     	*/
 		it('have objects with URLs that are defined and not empty', function() {
 			for (let eachObject of allFeeds) {
