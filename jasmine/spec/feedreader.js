@@ -50,7 +50,7 @@ $(function() {
 		let menuClass;
 		let menuIcon = $( '.menu-icon-link' );
 		it('is hidden by default', function() {
-			menuClass = $('body').hasClass('menu-hidden');
+			menuClass = $( 'body' ).hasClass( 'menu-hidden' );
 			expect(menuClass).toBe(true);
 		});
 		/** Test ensures menu changes visibility when icon is clicked.
@@ -60,12 +60,12 @@ $(function() {
 			let testClick = $.Event( 'click' );
 			menuIcon.trigger( testClick );
 			// update menuClass
-			menuClass = $('body').hasClass('menu-hidden');
+			menuClass = $( 'body' ).hasClass( 'menu-hidden' );
 			expect(menuClass).toBe(false);
 			// simulate a click again
 			menuIcon.trigger( testClick );
 			// update menuClass
-			menuClass = $('body').hasClass('menu-hidden');
+			menuClass = $( 'body' ).hasClass( 'menu-hidden' );
 			expect(menuClass).toBe(true);
 		});
 	});
