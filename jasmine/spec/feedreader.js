@@ -70,29 +70,45 @@ $(function() {
 		});
 	});
 
+
 	describe('Initial Entries', function() {
-	/** TODO: Write a test that ensures when the loadFeed
-  	* function is called and completes its work, there is at least
-  	* a single .entry element within the .feed container.
+	/** Test ensures there is at least a single .entry element
+		* within the .feed container when loadFeed() completes.
   	* Remember, loadFeed() is asynchronous so this test will require
   	* the use of Jasmine's beforeEach and asynchronous done() function.
   	*/
-		it('have at least one entry in feed container', function() {
-			// placeholder
-			expect(true).toBe(true);
-			// expect(actual).matcher(expectedValue);
+		beforeEach(function(done) {
+			console.log('load feed 1');
+			loadFeed(0, function(){
+				done();
+			});
 		});
-});
+
+		it('have at least one entry in feed container', function() {
+			let entryList = $( '.feed' ).find('a');
+			// entryList should at least one entry
+			expect(entryList.length >0).toBe(true);
+		});
+	});
+
 
 	describe('New Feed Selection', function() {
 	/** TODO: Write a test that ensures when a new feed is loaded
   	* by the loadFeed function that the content actually changes.
   	* Remember, loadFeed() is asynchronous.
   	*/
+		let itemCompare = [];
+		let itemPush = function(arg) {
+			itemCompare.push(arg);
+		}
+
+		beforeEach(function() {
+		});
+
 		it('content changes when loadFeed() is called', function() {
-			// placeholder
-			expect(true).toBe(true);
-			// expect(actual).matcher(expectedValue);
+			console.log(itemCompare[0]);
+			console.log(itemCompare[1]);
+			expect(itemCompare[0]).not.toMatch(itemCompare[1]);
 		});
 	});
 }());
