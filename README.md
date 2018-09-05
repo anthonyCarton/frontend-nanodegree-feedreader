@@ -9,7 +9,7 @@ To run the project, fork it on [Github](https://github.com/anthonyCarton/fronten
 ### Pull it!
 Once you've forked the project, pull it.
 ```
-git pull https://github.com/anthonyCarton/frontend-nanodegree-feedreader.git
+git pull https://github.com/{your github profile}/frontend-nanodegree-feedreader.git
 ```
 
 ### Open it!
