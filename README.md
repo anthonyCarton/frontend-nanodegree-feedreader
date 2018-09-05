@@ -2,6 +2,22 @@
 
 In this project, we were given a web-based application that reads RSS feeds. We used [Jasmine](http://jasmine.github.io/) to write a series of tests for the application.
 
+## How to run this project
+### Fork it!
+To run the project, fork it on [Github](https://github.com/anthonyCarton/frontend-nanodegree-feedreader).
+
+### Pull it!
+Once you've forked the project, pull it.
+```
+git pull https://github.com/anthonyCarton/frontend-nanodegree-feedreader.git
+```
+
+### Open it!
+Open the index.html document in your favorite browser.
+```
+open index.html
+```
+
 ## [Jasmine](http://jasmine.github.io/)
 The project uses [Jasmine](http://jasmine.github.io/) for 'test-driven development'.
 
