@@ -114,6 +114,9 @@ $(function() {
 			loadFeed(0, function() {
 				// push first item to itemCompare[1]
 				itemCompare[1] = $('.feed').html();
+				// expect both feeds to be defined at this point.
+				expect(itemCompare[0]).toBeDefined();
+				expect(itemCompare[1]).toBeDefined();
 				done();
 			});
 
