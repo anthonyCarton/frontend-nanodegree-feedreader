@@ -103,7 +103,7 @@ $(function() {
 			// load the 2nd feed initially
 			loadFeed(1, function() {
 				// first item to itemCompare[0]
-				itemCompare[0] = $('.feed').find('h2').html();
+				itemCompare[0] = $('.feed').html();
 				done();
 			});
 		});
@@ -113,7 +113,7 @@ $(function() {
 			// load the 1st feed again
 			loadFeed(0, function() {
 				// push first item to itemCompare[1]
-				itemCompare[1] = $('.feed').find('h2').html();
+				itemCompare[1] = $('.feed').html();
 				done();
 			});
 
