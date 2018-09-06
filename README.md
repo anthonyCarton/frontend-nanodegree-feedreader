@@ -48,3 +48,8 @@ This test ensures content actually changes when new feed is loaded by the loadFe
 
 ## Contributing
 This is a project for my class so I will not be accepting contributions.
+
+## Other Attributions
+
+### URL Regex Matching
+URL Regex Matching method from [RegEx Texting](https://www.regextester.com/96146).
