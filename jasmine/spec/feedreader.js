@@ -24,6 +24,7 @@ $(function() {
     	*/
 		it('have objects with URLs that are defined and not empty', function() {
 			for (let eachObject of allFeeds) {
+				// URL Regex Matcher from https://www.regextester.com/96146
 				let regexMatcher = /((http|ftp|https):\/\/)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
 				expect(eachObject.url).toBeDefined();
 				expect(eachObject.url).toMatch(regexMatcher);
@@ -84,9 +85,9 @@ $(function() {
 		});
 
 		it('have at least one entry in feed container', function() {
-			let entryList = $( '.feed' ).find('a');
+			let entryList = $( '.feed a' ).hasClass( 'entry-link' );
 			// entryList should at least one entry
-			expect(entryList.length >0).toBe(true);
+			expect(entryList).toBe(true);
 		});
 	});
 
