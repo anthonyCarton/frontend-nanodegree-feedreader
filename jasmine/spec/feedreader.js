@@ -48,10 +48,9 @@ $(function() {
 	describe('The menu', function() {
 		/** Test ensures menu is hidden by default.
 			*/
-		let menuClass;
+		let menuClass = $( 'body' ).hasClass( 'menu-hidden' );
 		let menuIcon = $( '.menu-icon-link' );
 		it('is hidden by default', function() {
-			menuClass = $( 'body' ).hasClass( 'menu-hidden' );
 			expect(menuClass).toBe(true);
 		});
 		/** Test ensures menu changes visibility when icon is clicked.
@@ -85,9 +84,9 @@ $(function() {
 		});
 
 		it('have at least one entry in feed container', function() {
-			let entryList = $( '.feed a' ).hasClass( 'entry-link' );
+			let entryList = $( '.feed .entry' );
 			// entryList should at least one entry
-			expect(entryList).toBe(true);
+			expect(entryList.length).not.toBe(0);
 		});
 	});
 
